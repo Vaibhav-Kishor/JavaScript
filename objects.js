@@ -105,12 +105,75 @@ const value2 = "myValue2";
 // console.log(obj);
 
 
+//? using spread operator
+const obj1 = {
+    key1 : "value1",
+    key2 : "value2",
+    key1 : "value3",
+};
+// console.log(obj1.key1); //! output: value3
+
+const obj2 = {
+    key3 : "value3",
+    key4 : "value4",
+};
+
+// const newObj = { ...obj1,...obj2, key69 : "value69"}
+// console.log(newObj);
+
+//! Object destructuring
+//? 1st way
+const band = {
+    bandName : "led zepplin",
+    famousSong : "stairway to heaven",
+};
+
+// const bandName = band.bandName;
+// const famousSong = band.famousSong;
+// console.log(bandName);
+// console.log(famousSong);
+
+// //? 2nd way
+// const {bandName,famousSong} = band;
+// console.log(bandName);
+
+// let {bandName,famousSong,...restProps } = band
+
+// const {bandName:var1,famousSong:var2} = band;
+
+// console.log(bandName) //! output : reference error
+// console.log(famousSong)//! output : reference error
+
+// console.log(var1); //! output : led zepplin
+// console.log(var2); //! output : stairway to heaven
 
 
 
+//! OBJECTS IN ARRAY
+//* very usefull in real world application
+const users = [
+    { userId : 1, firstName: 'vaibhav', gender : 'male'},
+    { userId : 2, firstName: 'gulshan', gender : 'male'},
+    { userId : 3, firstName: 'abhishek', gender : 'male'},
+]
+// console.log(users);
 
+// for( let user of users){
+// console.log(user);
+// console.log(user.userId);
+// }
 
+//! destructuring object within array
+// const [ user1, user2, user3] = users;
+// console.log(user1);
 
+//! destructuring key of object which are in array
+//? use key name as variable
+//  const [{firstName}, ,{gender}] = users;
+//  console.log(firstName);
+//  console.log(gender);
 
+//? create different variable name
+// const [ {firstName:user1firstName},,{gender:user3gender}] = users;
 
 

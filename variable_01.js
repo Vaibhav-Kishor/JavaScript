@@ -1,5 +1,5 @@
 //! Variable In Js
-//? var
+//? var  
 //? let
 //? const
 
@@ -44,17 +44,17 @@ console.log(value);
 //? 2.let  ->> let name;
 //? 3.const ->> const name;
 
-//* 1. var
+//* 1. var (funtional Scope)
 // var n = 10;
 // var n = 20; //! Problem...
 // console.log(n);
 
-//* 2. let
+//* 2. let (block scope)
 //let n = 10;
 //let n = 20; //! Syntax Error, 'n' has already been declared
 // //console.log(n);
 
-//* 3. const
+//* 3. const( block scope)
 // const pi = 3.14;
 // //console.log(pi);
 // pi = 3.147; //! Type Error

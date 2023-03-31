@@ -1,5 +1,5 @@
-//! typeof operator
-// data type
+
+//! data type
 // string
 // number
 // boolean
@@ -15,9 +15,9 @@
 // console.log(typeof(age)); //! output ->> number
 
 //! boolean and comparison operator
-//* let num1 =5;
-//* let num2 =10;
-//* let num3 =9
+//* let num1 = 5;
+//* let num2 = 10;
+//* let num3 = 9;
 // console.log(num1>num2);//! False
 // console.log(num2>num1);//! True
 
@@ -28,6 +28,7 @@
 //* let str  = "5";
 // console.log(num1==num2);//! Output: True
 // console.log(num1==str);//! Output: True
+
 //? 2. === (check data and type also)
 //* let num = 5;
 //* let str = "5";

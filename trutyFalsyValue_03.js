@@ -1,6 +1,7 @@
 //! Truthy and Falsy Value
 //? 1. Truthy Value
 // any data except falsy
+
 //? 2. Falsy Value
 //* false
 //* ""
