@@ -66,6 +66,40 @@ console.log(myFun(3,4,5,6,7,8,9));
 
 
 
+//! function expression
+//* when function assign to the variable is said to be function expression
+// const add = function sum(a,b){
+//     return a+b;
+// }
+// let ans = add(5,5);
+// console.log(ans);
+
+//! anonymous function
+//* function without name
+// const add = function (a,b) {
+//     return a+b;
+// }
+// console.log(add(5,6));
+
+//! arrow function ->> (parameter)=>{}
+//* function without name and function keyword
+//? if function have multiple statements
+// const add = (a,b)=> {
+//     return a+b;
+// }
+// console.log(add(5,6));
+
+//? if function have single statement
+//* don't need {} bracket, and return keyword to return
+// const add = (a,b)=> a+b;
+
+//? if function have single parameter with single statement
+//* remove () bracket 
+// const name = s =>console.log(s);
+
+
+
+
 
 //! Parameter Destructuring
 
@@ -112,7 +146,7 @@ const person = {
 // myFun(myFun2);
 
 
-//! function returning function
+//! function return function
 // function myFun() {
 //     function hello() {
 //         return "Hello World";

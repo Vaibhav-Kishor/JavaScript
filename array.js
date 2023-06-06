@@ -146,3 +146,81 @@
 //  console.log(myVar1);
 //  console.log(myVar2);
 // console.log(myNewArray);
+
+
+
+//! important array methods
+
+//! forEach()
+//? forEach with array
+//* takes callBack function
+
+// const numbers = [4,2,5,8];
+
+//? traditional way
+// function myFun(number,index) {
+//     console.log(`index is ${index} number is ${number}`)
+// }
+// for(let i=0; let<numbers.length; i++){
+//     myFun(numbers[i],i);
+// }
+
+//? another way
+// numbers.forEach(function myFun(number,index) {
+//     console.log(`index is ${index} number is ${number}`);
+// });
+
+//? forEach with array of object
+// let users = [
+//     {firstname: 'raushan',age:20},
+//     {firstname: 'vaibhav',age:22},
+//     {firstname: 'nitesh',age:23},
+// ]
+
+// users.forEach((user,index)=>{
+//     console.log(user.firstname,index);
+// })
+
+//! map() 
+//* return array
+//* takes callBack() functionn
+
+
+//? traditional way
+// let numbers = [4,5,6,7,8];
+
+// function square(number){
+//     return number*number;
+// }
+
+// let result = [];
+// for(let i=0; i<numbers.length;i++){
+//     result[i] = square(numbers[i]);
+// }
+
+//? using map
+//  const squareNumber = numbers.map(square);
+
+//? another way
+// const squareNumber = numbers.map(number=>number*number);
+
+//? map() with array of object
+const users = [
+    { userId:1,userName:"Gulshan",gender:'male'},
+    { userId:2,userName:"Abhishek",gender:'male'},
+    { userId:1,userName:"Vaibhav",gender:'male'},
+]
+ const usersName = users.map(user=>user.userName);
+ console.log(usersName);
+
+
+
+//! filter()
+//* creates a new array filled with elements that pass a test provided by a function.
+//* works on boolean 
+const numbers = [2,4,6,8,10];
+
+const idOdd = (number)=>{
+    number%2===0;
+}
+
